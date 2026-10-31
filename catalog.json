@@ -1,9 +1,9 @@
 {
   "name": "Labor Almanac",
   "description": "An open, versioned index of public labor and employment data.",
-  "count": 6,
+  "count": 7,
   "by_status": {
-    "live": 6
+    "live": 7
   },
   "entries": [
     {
@@ -267,6 +267,60 @@
       "license": "public-domain (US Gov work)",
       "attribution": "U.S. Bureau of Labor Statistics, Job Openings and Labor Turnover Survey",
       "notes": "Human-verified 2026-10-31 in headless Chromium: HTTP 200, page \"JOLTS Home : U.S. Bureau of Labor Statistics\". The latest release is \"August job openings and hires change little; total separations unchanged\" (09/29/2026), and \"Annual 2025 state job openings and labor turnover data available; monthly data revised\" (07/22/2026) is also listed. The page says the September 2026 JOLTS is due \"November 3, 2026, 10:00 A.M. Eastern Time\". The page did not quote a programme description, so the description follows JOLTS's standard scope. The formats and start year were not checked. bls.gov returned HTTP 403 \"Access Denied\" (Akamai) to curl with a browser user agent and to default headless Chromium. It answered only in Chromium's new headless mode (playwright chromium.launch with channel \"chromium\"), so the vertical needs reachability.headless: true and may need that launch mode. The BLS Public Data API (api.bls.gov) answered HTTP 200 but returned \"REQUEST_NOT_PROCESSED ... daily threshold ... has been reached\" for an unkeyed request through this shared proxy. Heavy use needs a free registration key, and the documented limits were not checked.\nLicence checked 2026-10-31: BLS Copyright Information (https://www.bls.gov/opub/copyright-information.htm, read in headless Chromium) says \"The Bureau of Labor Statistics (BLS) is a Federal government agency and everything that we publish, both in hard copy and electronically, is in the public domain, except for previously copyrighted photographs and illustrations. You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source.\" The BLS emblem is a registered trademark.\n"
+    },
+    {
+      "id": "bls-laus",
+      "type": "dataset",
+      "title": "BLS Local Area Unemployment Statistics (LAUS)",
+      "description": "Monthly and annual employment, unemployment and labor force estimates by place of residence for US census regions and divisions, states, counties, metropolitan areas and many cities: the standard source for state and local unemployment rates.\n",
+      "publisher": "U.S. Bureau of Labor Statistics (BLS), Department of Labor",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "unemployment",
+        "employment",
+        "labor-force",
+        "states",
+        "counties",
+        "united-states"
+      ],
+      "source": {
+        "canonical_url": "https://www.bls.gov/lau/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": "free registration key for higher BLS Public Data API limits (limits not checked)",
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "txt",
+        "json"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (regions, divisions, states, counties, metropolitan areas, many cities)",
+        "temporal": "varies by geography (not checked)",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Bureau of Labor Statistics, Local Area Unemployment Statistics",
+      "notes": "Human-verified 2026-10-31 in headless Chromium: HTTP 200, page \"LAUS Home : U.S. Bureau of Labor Statistics\". It says \"The Local Area Unemployment Statistics (LAUS) program produces monthly and annual employment, unemployment, and labor force data for Census regions and divisions, States, counties, metropolitan areas, and many cities, by place of residence.\" Recent releases are \"September jobless rates down in 5 states; payroll jobs up in 2 states, down in 1\" (10/20/2026) and \"Sept. jobless rates down over the year in 226 of 387 metro areas; payroll jobs up in 11\" (10/28/2026). The formats and start years were not checked. bls.gov returned HTTP 403 \"Access Denied\" (Akamai) to curl with a browser user agent and to default headless Chromium. It answered only in Chromium's new headless mode (playwright chromium.launch with channel \"chromium\"), so the vertical needs reachability.headless: true and may need that launch mode. The BLS Public Data API (api.bls.gov) answered HTTP 200 but returned \"REQUEST_NOT_PROCESSED ... daily threshold ... has been reached\" for an unkeyed request through this shared proxy. Heavy use needs a free registration key, and the documented limits were not checked.\nLicence checked 2026-10-31: BLS Copyright Information (https://www.bls.gov/opub/copyright-information.htm, read in headless Chromium) says \"The Bureau of Labor Statistics (BLS) is a Federal government agency and everything that we publish, both in hard copy and electronically, is in the public domain, except for previously copyrighted photographs and illustrations. You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source.\" The BLS emblem is a registered trademark.\n"
     },
     {
       "id": "ilo-ilostat",
