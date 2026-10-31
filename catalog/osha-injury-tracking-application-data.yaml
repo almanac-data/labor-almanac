@@ -29,9 +29,11 @@ status_since: '2026-10-31'
 status_source: curator
 observed:
   checked: '2026-10-31'
-  reachable: null
-  http_status: null
-  final_url: null
+  reachable: true
+  http_status: 200
+  final_url: https://www.osha.gov/itadata
+  redirect_chain: []
+  fingerprint_result: no-baseline
 coverage:
   spatial: United States (establishment level; covered establishments only)
   temporal: 2016-present (summary data); 2023-present (case detail)
