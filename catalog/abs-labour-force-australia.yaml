@@ -1,0 +1,43 @@
+id: abs-labour-force-australia
+type: dataset
+title: ABS Labour Force, Australia
+description: |
+  The Australian Bureau of Statistics' monthly headline labour market release from the Labour Force Survey: employment, unemployment, underemployment, participation and hours worked, nationally and by state and territory, in original, seasonally adjusted and trend terms.
+publisher: Australian Bureau of Statistics (ABS)
+jurisdiction:
+  scope: national
+  country: AU
+topics:
+- employment
+- unemployment
+- underemployment
+- labour-force-survey
+- australia
+source:
+  canonical_url: https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- xlsx
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: Australia (national, states and territories)
+  temporal: varies by series (not checked)
+  cadence: monthly
+license: CC-BY-4.0 (ABS website copyright statement)
+attribution: 'Source: Australian Bureau of Statistics, Labour Force, Australia, <reference period>'
+notes: |
+  Human-verified 2026-10-31: HTTP 200, page "Labour Force, Australia, September 2026", "Headline estimates of employment, unemployment, underemployment, participation and hours worked from the monthly Labour Force Survey", released 15/10/2026. It reports that seasonally adjusted "the unemployment rate increased 0.1ppt to 4.7%" and notes that the September 2026 release "marks the return to the full suite of Labour Force data products" after the Labour Force Modernisation. The page has "Data downloads" sections; the spreadsheet format is assumed and wasn't opened. The ABS Data API and the series start years weren't checked.
+  Licence checked 2026-10-31: the ABS copyright page (https://www.abs.gov.au/website-privacy-copyright-and-disclaimer) says "All material presented on this website is provided under a Creative Commons Attribution 4.0 International licence, with the exception of: the Commonwealth Coat of Arms, the ABS logo" and some other items. This is a site-wide statement that covers the data downloads. The attribution string follows the ABS's general guidance ("Attributing ABS material"), which wasn't opened.
