@@ -1,0 +1,46 @@
+id: bls-cps-labor-force-statistics
+type: dataset
+title: BLS Labor Force Statistics from the Current Population Survey (CPS)
+description: |
+  The monthly US household survey, run with the Census Bureau, behind the official unemployment rate, labor force participation rate and employment-population ratio, with demographic detail and usual weekly earnings.
+publisher: U.S. Bureau of Labor Statistics (BLS), Department of Labor
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- unemployment
+- labor-force-participation
+- employment
+- earnings
+- united-states
+source:
+  canonical_url: https://www.bls.gov/cps/
+access:
+  method:
+  - web
+  - api
+  - bulk
+  auth_required: false
+  auth_note: free registration key for higher BLS Public Data API limits (limits not checked)
+  rate_limit: null
+format:
+- xlsx
+- txt
+- json
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States (national)
+  temporal: varies by series (not checked)
+  cadence: monthly
+license: public-domain (US Gov work)
+attribution: U.S. Bureau of Labor Statistics, Current Population Survey
+notes: |
+  Human-verified 2026-10-31 in headless Chromium: HTTP 200, page "CPS Home : U.S. Bureau of Labor Statistics". It says "The Current Population Survey (CPS) provides a wealth of information on the nation's labor force including data on the employed, unemployed, and those not in the labor force. Key CPS measures are the unemployment rate, labor force participation rate, and employment-population ratio." Recent releases are "Full-time wage and salary workers median weekly earnings are $1,232 in 3rd quarter 2026" (10/21/2026) and the September Employment Situation (10/02/2026). The survey is a joint BLS and Census Bureau program; BLS, a federal agency, publishes the labor force statistics. Microdata (Census-hosted) and the formats were not checked. bls.gov returned HTTP 403 "Access Denied" (Akamai) to curl with a browser user agent and to default headless Chromium. It answered only in Chromium's new headless mode (playwright chromium.launch with channel "chromium"), so the vertical needs reachability.headless: true and may need that launch mode. The BLS Public Data API (api.bls.gov) answered HTTP 200 but returned "REQUEST_NOT_PROCESSED ... daily threshold ... has been reached" for an unkeyed request through this shared proxy. Heavy use needs a free registration key, and the documented limits were not checked.
+  Licence checked 2026-10-31: BLS Copyright Information (https://www.bls.gov/opub/copyright-information.htm, read in headless Chromium) says "The Bureau of Labor Statistics (BLS) is a Federal government agency and everything that we publish, both in hard copy and electronically, is in the public domain, except for previously copyrighted photographs and illustrations. You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source." The BLS emblem is a registered trademark.
