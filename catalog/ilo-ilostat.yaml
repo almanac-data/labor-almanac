@@ -1,0 +1,50 @@
+id: ilo-ilostat
+type: dataset
+title: ILOSTAT — ILO Labour Statistics Database
+description: |
+  The International Labour Organization's global labour statistics database: employment, unemployment, labour force, wages, working time, labour income, informality, occupational safety and labour-related SDG indicators, compiled from national sources and ILO modelled estimates for more than 200 countries and territories.
+publisher: International Labour Organization (ILO)
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- employment
+- unemployment
+- wages
+- labour-force
+- informality
+- sdg
+- global
+source:
+  canonical_url: https://rplumber.ilo.org/__docs__/
+access:
+  method:
+  - web
+  - api
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- xlsx
+- dta
+- parquet
+- json
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: global (200+ countries and territories, plus regional and income-group aggregates)
+  temporal: varies by indicator
+  cadence: irregular
+license: CC-BY-4.0 (ILO Rights and permissions, data published as of 3 May 2023)
+attribution: International Labour Organization, ILOSTAT database
+notes: |
+  Human-verified 2026-10-31: HTTP 200 for the ILOSTAT API documentation (titled "ILOSTAT API", "Simple, comprehensive and direct access to ILOSTAT data", with examples for browser, R, Python, Stata and SAS). The main ILOSTAT portal (https://ilostat.ilo.org/data/) answered HTTP 403 with a Cloudflare "Just a moment..." challenge to curl, headless Chromium and WebFetch alike, so this entry catalogs the ILO-run API host; a curator may prefer to switch canonical_url back to the portal once it can be verified. On the same host, the ILOSTAT Bulk Download page (https://rplumber.ilo.org/files/website/bulk/indicator.html) showed "Last update: 2026-10-30" and lists .csv, .csv.gz, .dta, .feather, .rds, .parquet, .tsv and .json files, and a sample API call (unemployment rate, Canada, CSV) returned HTTP 200. ILO's own www.ilo.org/data-and-statistics page (HTTP 200) calls ILOSTAT "The world's leading source of labour statistics" with "300 million+ data points freely accessible".
+  Licence checked 2026-10-31: ILO Rights and permissions (https://www.ilo.org/rights-and-permissions, redirected from the API's "Copyright & permissions" link) says "As of 3 May 2023, databases and datasets together with the accompanying referential metadata are covered by the Creative Commons CC BY 4.0 licence. This licence does not apply to microdata submitted by or obtained from constituents and partner institutions that is restricted solely to the ILO's use." Data published before that date "do not automatically benefit from a Creative Commons licence". The ILOSTAT-specific terms page and citation format on ilostat.ilo.org could not be read (Cloudflare). Indicator coverage, start years and the cadence were not checked.
