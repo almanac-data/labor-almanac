@@ -1,0 +1,45 @@
+id: oecd-employment-labour-market
+type: dataset
+title: OECD Employment and Labour Market Statistics (OECD Data Explorer)
+description: |
+  The OECD's employment datasets in its Data Explorer: annual and short-term labour force statistics, employment and unemployment indicators, earnings, wages and benefits, minimum wages and employment protection, harmonised across OECD member countries and some partner economies.
+publisher: Organisation for Economic Co-operation and Development (OECD)
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- employment
+- unemployment
+- earnings
+- wages
+- labour-force
+- oecd
+source:
+  canonical_url: https://data-explorer.oecd.org/?fs%5B0%5D=Topic%2C0%7CEmployment%23JOB%23&pg=0&fc=Topic
+access:
+  method:
+  - web
+  - api
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- sdmx
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: OECD member countries, selected partner economies and aggregates (OECD total, euro area, EU, G7)
+  temporal: varies by dataset
+  cadence: irregular
+license: OECD Terms and Conditions (data reusable for any purpose, including commercial, with attribution; not a Creative Commons licence)
+attribution: OECD (year), (dataset name), (data source) DOI or URL (accessed on (date))
+notes: |
+  Human-verified 2026-10-31: HTTP 200 (curl; the page is a JavaScript app and was read in headless Chromium). With the Topic facet set to Employment it reports "68 datasets found" across "Benefits, earnings and wages" (21), "Employment indicators" (37), "Unemployment indicators" (19) and "Employment protection" (1); the first entries include "Annual labour force survey, summary tables" and "Adequacy of minimum income benefits". The SDMX API at https://sdmx.oecd.org/public/rest/ answered HTTP 200; the download formats listed here are assumed. The OECD employment topic page (https://www.oecd.org/en/topics/employment.html) sat behind a Cloudflare challenge and could not be read.
+  Licence checked 2026-10-31: OECD Terms and Conditions (https://www.oecd.org/en/about/terms-conditions.html; behind Cloudflare, it loaded in headless Chromium on some attempts). On the CC BY 4.0 question: CC BY 4.0 applies to "most OECD written content published as of 1 July 2024". Data have their own terms under "3. Data", Permitted Use: "Except where additional restrictions apply as stated above, you can extract from, download, copy, adapt, print, distribute, share and embed Data for any purpose, even for commercial use. You must give appropriate credit to the OECD by using the citation associated with the relevant Data". Users must also pass the acknowledgement requirement on in sub-licences, and check for third-party ownership in each dataset's metadata. So the data are open with attribution, but they are not CC BY 4.0. The individual datasets' metadata was not checked for third-party restrictions.
