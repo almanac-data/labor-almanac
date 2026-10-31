@@ -1,9 +1,9 @@
 {
   "name": "Labor Almanac",
   "description": "An open, versioned index of public labor and employment data.",
-  "count": 10,
+  "count": 11,
   "by_status": {
-    "live": 10
+    "live": 11
   },
   "entries": [
     {
@@ -540,6 +540,57 @@
       "license": "CC-BY-4.0 (ILO Rights and permissions, data published as of 3 May 2023)",
       "attribution": "International Labour Organization, ILOSTAT database",
       "notes": "Human-verified 2026-10-31: HTTP 200 for the ILOSTAT API documentation (titled \"ILOSTAT API\", \"Simple, comprehensive and direct access to ILOSTAT data\", with examples for browser, R, Python, Stata and SAS). The main ILOSTAT portal (https://ilostat.ilo.org/data/) answered HTTP 403 with a Cloudflare \"Just a moment...\" challenge to curl, headless Chromium and WebFetch alike, so this entry catalogs the ILO-run API host; a curator may prefer to switch canonical_url back to the portal once it can be verified. On the same host, the ILOSTAT Bulk Download page (https://rplumber.ilo.org/files/website/bulk/indicator.html) showed \"Last update: 2026-10-30\" and lists .csv, .csv.gz, .dta, .feather, .rds, .parquet, .tsv and .json files, and a sample API call (unemployment rate, Canada, CSV) returned HTTP 200. ILO's own www.ilo.org/data-and-statistics page (HTTP 200) calls ILOSTAT \"The world's leading source of labour statistics\" with \"300 million+ data points freely accessible\".\nLicence checked 2026-10-31: ILO Rights and permissions (https://www.ilo.org/rights-and-permissions, redirected from the API's \"Copyright & permissions\" link) says \"As of 3 May 2023, databases and datasets together with the accompanying referential metadata are covered by the Creative Commons CC BY 4.0 licence. This licence does not apply to microdata submitted by or obtained from constituents and partner institutions that is restricted solely to the ILO's use.\" Data published before that date \"do not automatically benefit from a Creative Commons licence\". The ILOSTAT-specific terms page and citation format on ilostat.ilo.org could not be read (Cloudflare). Indicator coverage, start years and the cadence were not checked.\n"
+    },
+    {
+      "id": "mexico-inegi-enoe",
+      "type": "dataset",
+      "title": "INEGI — National Occupation and Employment Survey (ENOE), Mexico",
+      "description": "Mexico's main labour market survey, run by the national statistics institute: monthly and quarterly data on the labour force, employment, labour informality, underemployment and unemployment for the population aged 15 and over, nationally, by state and for major cities.\n",
+      "publisher": "Instituto Nacional de Estadística y Geografía (INEGI), Mexico",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "MX"
+      },
+      "topics": [
+        "employment",
+        "unemployment",
+        "informality",
+        "labour-force-survey",
+        "mexico"
+      ],
+      "source": {
+        "canonical_url": "https://www.inegi.org.mx/programas/enoe/15ymas/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "xlsx"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "Mexico (national, state and city level)",
+        "temporal": "2005-present (with the 2020 ETOE and 2020-2022 ENOEN editions in between)",
+        "cadence": "quarterly"
+      },
+      "license": "INEGI Términos de Libre Uso de la Información (free use with attribution)",
+      "attribution": "Fuente: INEGI, Encuesta Nacional de Ocupación y Empleo (ENOE)",
+      "notes": "Human-verified 2026-10-31 in headless Chromium: HTTP 200, page \"Encuesta Nacional de Ocupación y Empleo (ENOE), población de 15 años y más de edad\". It says the ENOE \"es la principal fuente de información sobre el mercado laboral mexicano al ofrecer datos mensuales y trimestrales de la fuerza de trabajo, la ocupación, la informalidad laboral, la subocupación y la desocupación\". It shows \"Indicadores de Ocupación y Empleo — Publicación reciente: 22 de octubre de 2026\" (next 26 November 2026) and the quarterly ENOE \"Publicación reciente: 25 de agosto de 2026\" (next 25 November 2026). The page says the April-June 2020 figures come from the telephone ETOE and Q3 2020 to Q4 2022 from the ENOEN. INEGI's Radware bot manager redirected plain curl (HTTP 403 / validate.perfdrive.com), so this needs a browser. The English mirror en.www.inegi.org.mx answered HTTP 200 to curl. The microdata formats and the indicator API weren't checked.\nLicence checked 2026-10-31: INEGI's terms page (https://www.inegi.org.mx/inegi/terminos.html, read in headless Chromium) says users \"Puede utilizar la información del INEGI con apego a lo dispuesto en los 'Términos de Libre Uso de la Información del INEGI'\". These permit copying, adaptation and commercial use, and the user \"Debe otorgar los créditos correspondientes al INEGI como autor ... de la siguiente manera: 'Fuente: INEGI, nombre del producto de donde se extrae la información'\".\n"
     }
   ]
 }
