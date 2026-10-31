@@ -1,0 +1,46 @@
+id: dol-open-data-portal
+type: dataset
+title: US Department of Labor Open Data Portal (enforcement and program data)
+description: |
+  The Department of Labor's open data portal, successor to enforcedata.dol.gov: Wage and Hour Division enforcement cases, OSHA inspections, violations and accident investigations, MSHA mine inspections and violations, EBSA case data, and unemployment insurance weekly claims, among other agency datasets.
+publisher: U.S. Department of Labor (DOL)
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- labor-law-enforcement
+- wage-and-hour
+- workplace-safety
+- osha
+- msha
+- unemployment-insurance
+- united-states
+source:
+  canonical_url: https://data.dol.gov/
+access:
+  method:
+  - web
+  - api
+  auth_required: true
+  auth_note: free account and API key required for the data API; the dataset-catalog endpoint needs no key; whether web downloads need sign-in was not checked
+  rate_limit: null
+format:
+- csv
+- json
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States (establishment level)
+  temporal: varies by dataset (not checked)
+  cadence: irregular
+license: public-domain (US Gov work)
+attribution: U.S. Department of Labor, <agency> <dataset name>, DOL Open Data Portal
+notes: |
+  Human-verified 2026-10-31: HTTP 200, page "Open Data Portal | United States Department of Labor" (marked "beta"), "Explore and download labor and workplace data". The old enforcement site https://enforcedata.dol.gov/views/data_summary.php now returns HTTP 301 to https://data.dol.gov:443/, so this entry catalogs the portal. Its keyless Datasets API (https://apiprod.dol.gov/v4/datasets) listed 45 datasets, including "WHD | Enforcement" (quarterly), OSHA Inspection, Violation, Violation Event and Accident tables (daily), eleven MSHA tables (weekly), EBSA OCATS (quarterly), and ETA unemployment insurance national and state weekly claims. The API user guide says "To use our APIs, you need to register for an account and complete our questionnaire to get an API key" and gives CSV and JSON endpoints. The formats come from those endpoint patterns; the individual downloads weren't opened.
+  Licence checked 2026-10-31: DOL's Public Domain Copyright page (https://www.dol.gov/general/aboutdol/copyright) says "Materials created by the federal government are generally part of the public domain and may be used, reproduced and distributed without permission ... You may properly credit public domain materials obtained from a DOL website to the U.S. Department of Labor and/or https://www.dol.gov." This is a department-wide statement, not a dataset-specific licence; it warns that some content may be third-party copyrighted.
