@@ -1,0 +1,49 @@
+id: eurostat-labour-market-database
+type: dataset
+title: Eurostat Labour Market Database
+description: |
+  Eurostat's labour market statistics for the EU: the EU Labour Force Survey (employment, unemployment, working time, labour market slack), labour costs, earnings and the structure of earnings, job vacancies, and labour market policy data, harmonised across member states.
+publisher: Eurostat (European Commission)
+jurisdiction:
+  scope: regional-bloc
+  country: null
+topics:
+- employment
+- unemployment
+- labour-force-survey
+- earnings
+- labour-costs
+- job-vacancies
+- europe
+source:
+  canonical_url: https://ec.europa.eu/eurostat/web/labour-market/database
+access:
+  method:
+  - web
+  - api
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- tsv
+- xlsx
+- sdmx
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: EU member states (plus some EFTA and candidate countries); NUTS regions for some series
+  temporal: varies by dataset
+  cadence: quarterly
+license: CC-BY-4.0 (Eurostat copyright notice and free re-use of data)
+attribution: Eurostat
+notes: |
+  Human-verified 2026-10-31: HTTP 200 (curl and headless Chromium), page "LABOUR MARKET Database" with "Selected datasets" and "Detailed datasets" trees and tabs for Overview, Publications, Information on data, Methodology and Legislation. The tree is collapsed in the page text, so the subject list in the description (LFS, labour costs, earnings, vacancies, LMP) follows Eurostat's usual theme structure and wasn't read item by item. A separate LFS database page (https://ec.europa.eu/eurostat/web/lfs/database) also answered HTTP 200; it is a subset of this theme, so it isn't cataloged separately. The quarterly cadence describes the headline LFS series; other datasets are annual or multi-annual. The formats and API weren't checked.
+  Licence checked 2026-10-31: Eurostat's copyright notice (https://ec.europa.eu/eurostat/help/copyright-notice) says "The copyright for the editorial content of this website, which is owned by the EU, is licensed under the Creative Commons Attribution 4.0 International licence" and "Reuse of statistical data, metadata, publications, and other dissemination tools published on this website for commercial or non-commercial purposes is authorised provided the source is acknowledged." Third-party material is excluded. This matches the licence string used by the other Eurostat entries across the Almanac.
