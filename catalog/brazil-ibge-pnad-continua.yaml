@@ -1,0 +1,46 @@
+id: brazil-ibge-pnad-continua
+type: dataset
+title: IBGE — Continuous National Household Sample Survey (PNAD Contínua), Brazil
+description: |
+  Brazil's continuous household survey and the source of the official unemployment rate (taxa de desocupação): quarterly and monthly (rolling-quarter) labour force, employment, informality and income indicators, plus annual supplements, published by the Brazilian Institute of Geography and Statistics.
+publisher: Instituto Brasileiro de Geografia e Estatística (IBGE)
+jurisdiction:
+  scope: national
+  country: BR
+topics:
+- employment
+- unemployment
+- informality
+- income
+- labour-force-survey
+- brazil
+source:
+  canonical_url: https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/
+access:
+  method:
+  - bulk
+  - api
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- txt
+- xlsx
+- json
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: Brazil (national, regions, states, capitals and metropolitan areas)
+  temporal: varies by table (not checked)
+  cadence: quarterly
+license: unverified — IBGE's terms pages on www.ibge.gov.br sit behind a Cloudflare challenge that could not be passed; no licence statement found on the reachable hosts
+attribution: 'Fonte: IBGE, Pesquisa Nacional por Amostra de Domicílios Contínua'
+notes: |
+  Human-verified 2026-10-31: HTTP 200 for IBGE's file server listing "Index of /Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua", with folders Anual/, Mensal/, Trimestral/, Notas_metodologicas/, Nota_Tecnica/, Estudos_especiais/, Renda_domiciliar_per_capita/ and Principais_destaques_PNAD_continua/ (the last modified 2026-01-30). The SIDRA API answered HTTP 200 for table 4099, returning "Taxa de desocupação, na semana de referência, das pessoas de 14 anos ou mais de idade" = 5.4% for "2º trimestre 2026". The survey's IBGE page (https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html), sidra.ibge.gov.br and agenciadenoticias.ibge.gov.br all returned HTTP 403 with a Cloudflare "Just a moment..." challenge to curl, headless Chromium and WebFetch, so the file server is cataloged instead; a curator may prefer the survey page once it can be verified. servicodados.ibge.gov.br reset the connection. The formats are inferred from the folder layout and the API response and weren't opened.
+  Licence checked 2026-10-31: not verified. No licence or terms text was reachable on IBGE's own hosts, so the licence is left unverified rather than guessed. The attribution string follows Brazilian convention and is not a quoted IBGE requirement.

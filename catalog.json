@@ -1,9 +1,9 @@
 {
   "name": "Labor Almanac",
   "description": "An open, versioned index of public labor and employment data.",
-  "count": 7,
+  "count": 8,
   "by_status": {
-    "live": 7
+    "live": 8
   },
   "entries": [
     {
@@ -321,6 +321,59 @@
       "license": "public-domain (US Gov work)",
       "attribution": "U.S. Bureau of Labor Statistics, Local Area Unemployment Statistics",
       "notes": "Human-verified 2026-10-31 in headless Chromium: HTTP 200, page \"LAUS Home : U.S. Bureau of Labor Statistics\". It says \"The Local Area Unemployment Statistics (LAUS) program produces monthly and annual employment, unemployment, and labor force data for Census regions and divisions, States, counties, metropolitan areas, and many cities, by place of residence.\" Recent releases are \"September jobless rates down in 5 states; payroll jobs up in 2 states, down in 1\" (10/20/2026) and \"Sept. jobless rates down over the year in 226 of 387 metro areas; payroll jobs up in 11\" (10/28/2026). The formats and start years were not checked. bls.gov returned HTTP 403 \"Access Denied\" (Akamai) to curl with a browser user agent and to default headless Chromium. It answered only in Chromium's new headless mode (playwright chromium.launch with channel \"chromium\"), so the vertical needs reachability.headless: true and may need that launch mode. The BLS Public Data API (api.bls.gov) answered HTTP 200 but returned \"REQUEST_NOT_PROCESSED ... daily threshold ... has been reached\" for an unkeyed request through this shared proxy. Heavy use needs a free registration key, and the documented limits were not checked.\nLicence checked 2026-10-31: BLS Copyright Information (https://www.bls.gov/opub/copyright-information.htm, read in headless Chromium) says \"The Bureau of Labor Statistics (BLS) is a Federal government agency and everything that we publish, both in hard copy and electronically, is in the public domain, except for previously copyrighted photographs and illustrations. You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source.\" The BLS emblem is a registered trademark.\n"
+    },
+    {
+      "id": "brazil-ibge-pnad-continua",
+      "type": "dataset",
+      "title": "IBGE — Continuous National Household Sample Survey (PNAD Contínua), Brazil",
+      "description": "Brazil's continuous household survey and the source of the official unemployment rate (taxa de desocupação): quarterly and monthly (rolling-quarter) labour force, employment, informality and income indicators, plus annual supplements, published by the Brazilian Institute of Geography and Statistics.\n",
+      "publisher": "Instituto Brasileiro de Geografia e Estatística (IBGE)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "BR"
+      },
+      "topics": [
+        "employment",
+        "unemployment",
+        "informality",
+        "income",
+        "labour-force-survey",
+        "brazil"
+      ],
+      "source": {
+        "canonical_url": "https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/"
+      },
+      "access": {
+        "method": [
+          "bulk",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "txt",
+        "xlsx",
+        "json"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "Brazil (national, regions, states, capitals and metropolitan areas)",
+        "temporal": "varies by table (not checked)",
+        "cadence": "quarterly"
+      },
+      "license": "unverified — IBGE's terms pages on www.ibge.gov.br sit behind a Cloudflare challenge that could not be passed; no licence statement found on the reachable hosts",
+      "attribution": "Fonte: IBGE, Pesquisa Nacional por Amostra de Domicílios Contínua",
+      "notes": "Human-verified 2026-10-31: HTTP 200 for IBGE's file server listing \"Index of /Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua\", with folders Anual/, Mensal/, Trimestral/, Notas_metodologicas/, Nota_Tecnica/, Estudos_especiais/, Renda_domiciliar_per_capita/ and Principais_destaques_PNAD_continua/ (the last modified 2026-01-30). The SIDRA API answered HTTP 200 for table 4099, returning \"Taxa de desocupação, na semana de referência, das pessoas de 14 anos ou mais de idade\" = 5.4% for \"2º trimestre 2026\". The survey's IBGE page (https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html), sidra.ibge.gov.br and agenciadenoticias.ibge.gov.br all returned HTTP 403 with a Cloudflare \"Just a moment...\" challenge to curl, headless Chromium and WebFetch, so the file server is cataloged instead; a curator may prefer the survey page once it can be verified. servicodados.ibge.gov.br reset the connection. The formats are inferred from the folder layout and the API response and weren't opened.\nLicence checked 2026-10-31: not verified. No licence or terms text was reachable on IBGE's own hosts, so the licence is left unverified rather than guessed. The attribution string follows Brazilian convention and is not a quoted IBGE requirement.\n"
     },
     {
       "id": "ilo-ilostat",
