@@ -1,0 +1,43 @@
+id: osha-injury-tracking-application-data
+type: dataset
+title: OSHA Injury Tracking Application (ITA) Establishment-Specific Injury and Illness Data
+description: |
+  Establishment-level work-related injury and illness records submitted electronically to OSHA: Form 300A annual summaries since 2016 and, from 2024, case detail from Forms 300 and 301 for covered establishments. The main public source of workplace-level injury data in the US.
+publisher: Occupational Safety and Health Administration (OSHA), U.S. Department of Labor
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- workplace-safety
+- occupational-injuries
+- occupational-illness
+- osha
+- united-states
+source:
+  canonical_url: https://www.osha.gov/itadata
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States (establishment level; covered establishments only)
+  temporal: 2016-present (summary data); 2023-present (case detail)
+  cadence: annual
+license: public-domain (US Gov work)
+attribution: Occupational Safety and Health Administration, Injury Tracking Application (ITA) data
+notes: |
+  Human-verified 2026-10-31: HTTP 200. The old URL https://www.osha.gov/Establishment-Specific-Injury-and-Illness-Data redirects here. The page is titled "Injury Tracking Application (ITA) Data: Establishment and Case Detail Work-related Injury and Illness Data" and says "Certain establishments submitted summary data from the OSHA Form 300A since 2016. Beginning in 2024, some establishments were also required to submit certain case details from OSHA Forms 300 and 301." The current files are "2025 Summary Data" and "2025 Case Detail Data", "covering 2025 work-related injuries and illnesses submitted from 1/1/2026 through 8/31/2026". A notice says the CY2023 and CY2024 case detail datasets were updated with OIICS-coded data. The page links technical guidance, including "Comparison Between OSHA ITA Data and BLS SOII Estimates" and "Representativeness of Data"; the data covers only establishments required to report and is not a national estimate. The download format is assumed to be CSV and wasn't opened. OSHA inspection and violation data are covered under dol-open-data-portal.
+  Licence checked 2026-10-31: DOL's Public Domain Copyright page (https://www.dol.gov/general/aboutdol/copyright) says "Materials created by the federal government are generally part of the public domain and may be used, reproduced and distributed without permission." This is department-wide and applies to OSHA as a DOL agency; no ITA-specific licence was found.
