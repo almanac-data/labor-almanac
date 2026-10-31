@@ -31,9 +31,11 @@ status_since: '2026-10-31'
 status_source: curator
 observed:
   checked: '2026-10-31'
-  reachable: null
-  http_status: null
-  final_url: null
+  reachable: true
+  http_status: 200
+  final_url: https://data-explorer.oecd.org/?fs%5B0%5D=Topic%2C0%7CEmployment%23JOB%23&pg=0&fc=Topic
+  redirect_chain: []
+  fingerprint_result: no-baseline
 coverage:
   spatial: OECD member countries, selected partner economies and aggregates (OECD total, euro area, EU, G7)
   temporal: varies by dataset

@@ -43,9 +43,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "Australia (national, states and territories)",
@@ -96,9 +98,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.bls.gov/ces/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (national; states and metropolitan areas through CES State and Metro Area)",
@@ -149,9 +153,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.bls.gov/cpi/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (national, census regions, selected metropolitan areas)",
@@ -202,9 +208,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.bls.gov/cps/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (national)",
@@ -255,9 +263,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.bls.gov/jlt/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (national, by industry and region; states)",
@@ -309,9 +319,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.bls.gov/lau/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (regions, divisions, states, counties, metropolitan areas, many cities)",
@@ -362,9 +374,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "Brazil (national, regions, states, capitals and metropolitan areas)",
@@ -415,9 +429,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://data.dol.gov/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (establishment level)",
@@ -471,9 +487,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://ec.europa.eu/eurostat/web/labour-market/database",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "EU member states (plus some EFTA and candidate countries); NUTS regions for some series",
@@ -528,9 +546,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://rplumber.ilo.org/__docs__/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "global (200+ countries and territories, plus regional and income-group aggregates)",
@@ -579,9 +599,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.inegi.org.mx/programas/enoe/15ymas/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "Mexico (national, state and city level)",
@@ -631,9 +653,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://data-explorer.oecd.org/?fs%5B0%5D=Topic%2C0%7CEmployment%23JOB%23&pg=0&fc=Topic",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "OECD member countries, selected partner economies and aggregates (OECD total, euro area, EU, G7)",
@@ -681,9 +705,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.osha.gov/itadata",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (establishment level; covered establishments only)",
@@ -732,9 +758,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=3701",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "Canada (national, provinces, territories, sub-provincial regions)",
@@ -783,9 +811,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.statssa.gov.za/?page_id=1854&PPN=P0211",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "South Africa (national and provincial)",
@@ -836,9 +866,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.ons.gov.uk/employmentandlabourmarket",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United Kingdom (national, regions and local areas for some series)",
