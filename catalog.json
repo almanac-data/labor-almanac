@@ -1,9 +1,9 @@
 {
   "name": "Labor Almanac",
   "description": "An open, versioned index of public labor and employment data.",
-  "count": 3,
+  "count": 4,
   "by_status": {
-    "live": 3
+    "live": 4
   },
   "entries": [
     {
@@ -108,6 +108,59 @@
       "license": "public-domain (US Gov work)",
       "attribution": "U.S. Bureau of Labor Statistics, Current Employment Statistics",
       "notes": "Human-verified 2026-10-31 in headless Chromium: HTTP 200, page \"Current Employment Statistics - CES (National)\". It says \"The Current Employment Statistics (CES) program produces detailed industry estimates of nonfarm employment, hours, and earnings of workers on payrolls.\" The latest releases listed are \"Both payroll employment (+29,000) and unemployment rate (4.2%) change little in September\" (10/02/2026) and \"Preliminary benchmark revision for March payroll employment is -79,000 (-0.1%)\" (08/28/2026). The page says The Employment Situation for October 2026 is due November 6, 2026. The formats and start years were not checked. bls.gov returned HTTP 403 \"Access Denied\" (Akamai) to curl with a browser user agent and to default headless Chromium. It answered only in Chromium's new headless mode (playwright chromium.launch with channel \"chromium\"), so the vertical needs reachability.headless: true and may need that launch mode. The BLS Public Data API (api.bls.gov) answered HTTP 200 but returned \"REQUEST_NOT_PROCESSED ... daily threshold ... has been reached\" for an unkeyed request through this shared proxy. Heavy use needs a free registration key, and the documented limits were not checked.\nLicence checked 2026-10-31: BLS Copyright Information (https://www.bls.gov/opub/copyright-information.htm, read in headless Chromium) says \"The Bureau of Labor Statistics (BLS) is a Federal government agency and everything that we publish, both in hard copy and electronically, is in the public domain, except for previously copyrighted photographs and illustrations. You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source.\" The BLS emblem is a registered trademark.\n"
+    },
+    {
+      "id": "bls-cpi",
+      "type": "dataset",
+      "title": "BLS Consumer Price Index (CPI)",
+      "description": "The official US measure of consumer price inflation: the average change over time in the prices urban consumers pay for a market basket of goods and services, for the US and various metropolitan areas and regions, with average price data for selected food, fuel and utility items. Belongs here as the deflator for real wages; economy-almanac cross-references it.\n",
+      "publisher": "U.S. Bureau of Labor Statistics (BLS), Department of Labor",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "consumer-prices",
+        "inflation",
+        "cpi",
+        "real-wages",
+        "united-states"
+      ],
+      "source": {
+        "canonical_url": "https://www.bls.gov/cpi/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": "free registration key for higher BLS Public Data API limits (limits not checked)",
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "txt",
+        "json"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (national, census regions, selected metropolitan areas)",
+        "temporal": "varies by index (not checked)",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Bureau of Labor Statistics, Consumer Price Index",
+      "notes": "Human-verified 2026-10-31 in headless Chromium: HTTP 200, page \"CPI Home : U.S. Bureau of Labor Statistics\". The latest release, dated 10/14/2026, is \"CPI for all items increases 0.6% in September; gasoline rises\": \"the Consumer Price Index for All Urban Consumers rose 0.6 percent, seasonally adjusted (SA), and rose 3.7 percent over the year\". The page says the October 2026 CPI is due \"November 10, 2026\". It also notes that BLS in summer 2025 \"announced reductions to CPI data collection across the country and a suspension of data collection in Lincoln, Nebraska; Provo, Utah; and Buffalo, New York\", and that some Baltimore energy index data for June to September 2026 \"were incorrect as published\". The formats and the flat-file download (download.bls.gov, HTTP 403 to curl) were not checked. bls.gov returned HTTP 403 \"Access Denied\" (Akamai) to curl with a browser user agent and to default headless Chromium. It answered only in Chromium's new headless mode (playwright chromium.launch with channel \"chromium\"), so the vertical needs reachability.headless: true and may need that launch mode. The BLS Public Data API (api.bls.gov) answered HTTP 200 but returned \"REQUEST_NOT_PROCESSED ... daily threshold ... has been reached\" for an unkeyed request through this shared proxy. Heavy use needs a free registration key, and the documented limits were not checked.\nLicence checked 2026-10-31: BLS Copyright Information (https://www.bls.gov/opub/copyright-information.htm, read in headless Chromium) says \"The Bureau of Labor Statistics (BLS) is a Federal government agency and everything that we publish, both in hard copy and electronically, is in the public domain, except for previously copyrighted photographs and illustrations. You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source.\" The BLS emblem is a registered trademark.\n"
     },
     {
       "id": "ilo-ilostat",
