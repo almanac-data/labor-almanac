@@ -1,9 +1,9 @@
 {
   "name": "Labor Almanac",
   "description": "An open, versioned index of public labor and employment data.",
-  "count": 2,
+  "count": 3,
   "by_status": {
-    "live": 2
+    "live": 3
   },
   "entries": [
     {
@@ -55,6 +55,59 @@
       "license": "CC-BY-4.0 (ABS website copyright statement)",
       "attribution": "Source: Australian Bureau of Statistics, Labour Force, Australia, <reference period>",
       "notes": "Human-verified 2026-10-31: HTTP 200, page \"Labour Force, Australia, September 2026\", \"Headline estimates of employment, unemployment, underemployment, participation and hours worked from the monthly Labour Force Survey\", released 15/10/2026. It reports that seasonally adjusted \"the unemployment rate increased 0.1ppt to 4.7%\" and notes that the September 2026 release \"marks the return to the full suite of Labour Force data products\" after the Labour Force Modernisation. The page has \"Data downloads\" sections; the spreadsheet format is assumed and wasn't opened. The ABS Data API and the series start years weren't checked.\nLicence checked 2026-10-31: the ABS copyright page (https://www.abs.gov.au/website-privacy-copyright-and-disclaimer) says \"All material presented on this website is provided under a Creative Commons Attribution 4.0 International licence, with the exception of: the Commonwealth Coat of Arms, the ABS logo\" and some other items. This is a site-wide statement that covers the data downloads. The attribution string follows the ABS's general guidance (\"Attributing ABS material\"), which wasn't opened.\n"
+    },
+    {
+      "id": "bls-ces",
+      "type": "dataset",
+      "title": "BLS Current Employment Statistics (CES)",
+      "description": "The monthly establishment survey behind the US nonfarm payroll jobs number: detailed industry estimates of employment, hours and earnings of workers on nonfarm payrolls, nationally and (through CES State and Metro Area) for all states and about 450 metropolitan areas.\n",
+      "publisher": "U.S. Bureau of Labor Statistics (BLS), Department of Labor",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "employment",
+        "payrolls",
+        "earnings",
+        "hours",
+        "united-states"
+      ],
+      "source": {
+        "canonical_url": "https://www.bls.gov/ces/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": "free registration key for higher BLS Public Data API limits (limits not checked)",
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "txt",
+        "json"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (national; states and metropolitan areas through CES State and Metro Area)",
+        "temporal": "varies by series (not checked)",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Bureau of Labor Statistics, Current Employment Statistics",
+      "notes": "Human-verified 2026-10-31 in headless Chromium: HTTP 200, page \"Current Employment Statistics - CES (National)\". It says \"The Current Employment Statistics (CES) program produces detailed industry estimates of nonfarm employment, hours, and earnings of workers on payrolls.\" The latest releases listed are \"Both payroll employment (+29,000) and unemployment rate (4.2%) change little in September\" (10/02/2026) and \"Preliminary benchmark revision for March payroll employment is -79,000 (-0.1%)\" (08/28/2026). The page says The Employment Situation for October 2026 is due November 6, 2026. The formats and start years were not checked. bls.gov returned HTTP 403 \"Access Denied\" (Akamai) to curl with a browser user agent and to default headless Chromium. It answered only in Chromium's new headless mode (playwright chromium.launch with channel \"chromium\"), so the vertical needs reachability.headless: true and may need that launch mode. The BLS Public Data API (api.bls.gov) answered HTTP 200 but returned \"REQUEST_NOT_PROCESSED ... daily threshold ... has been reached\" for an unkeyed request through this shared proxy. Heavy use needs a free registration key, and the documented limits were not checked.\nLicence checked 2026-10-31: BLS Copyright Information (https://www.bls.gov/opub/copyright-information.htm, read in headless Chromium) says \"The Bureau of Labor Statistics (BLS) is a Federal government agency and everything that we publish, both in hard copy and electronically, is in the public domain, except for previously copyrighted photographs and illustrations. You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source.\" The BLS emblem is a registered trademark.\n"
     },
     {
       "id": "ilo-ilostat",
