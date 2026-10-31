@@ -1,0 +1,44 @@
+id: statssa-quarterly-labour-force-survey
+type: dataset
+title: Stats SA Quarterly Labour Force Survey (QLFS), South Africa
+description: |
+  Statistics South Africa's quarterly household survey of the labour market and the source of South Africa's official and expanded unemployment rates, with employment by industry and sector (formal and informal), labour force participation and labour underutilisation, nationally and by province.
+publisher: Statistics South Africa (Stats SA)
+jurisdiction:
+  scope: national
+  country: ZA
+topics:
+- employment
+- unemployment
+- informality
+- labour-force-survey
+- south-africa
+- africa
+source:
+  canonical_url: https://www.statssa.gov.za/?page_id=1854&PPN=P0211
+access:
+  method:
+  - web
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- pdf
+- xlsx
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: South Africa (national and provincial)
+  temporal: 2008-present (per the "QLFS Trends 2008-2026Q2" file)
+  cadence: quarterly
+license: Stats SA copyright and disclaimer (free use with acknowledgement of Stats SA as the source; not an open licence by name)
+attribution: Statistics South Africa, Quarterly Labour Force Survey (P0211)
+notes: |
+  Human-verified 2026-10-31: HTTP 200, publication page "P0211 - Quarterly Labour Force Survey (QLFS), 2nd Quarter 2026", "Publication date & time: 11 August 2026 @ 11:00". The downloads are the full publication (PDF, 4.76 MB), a media release, a presentation, "Economically active population QLFS Q2 2026" and "QLFS Trends 2008-2026Q2" (1.64 MB). The spreadsheet format of the trends file is assumed and wasn't opened. The canonical URL is a series page (PPN=P0211) whose content rolls to the latest quarter. The description's split into official and expanded unemployment and into formal and informal employment comes from Stats SA's usual QLFS content and wasn't read on this page. Microdata (through the DataFirst portal) and the SuperWEB2 tables weren't checked.
+  Licence checked 2026-10-31: Stats SA's copyright and disclaimer page (https://www.statssa.gov.za/?page_id=425) says "All Stats SA products are protected by copyright. Users may apply the information as they wish, provided that they acknowledge Stats SA as the source of the basic data wherever they process, apply, utilise, publish or distribute the data, and also that they specify that the relevant application and analysis (where applicable) result from their own processing of the data."

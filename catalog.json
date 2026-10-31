@@ -1,9 +1,9 @@
 {
   "name": "Labor Almanac",
   "description": "An open, versioned index of public labor and employment data.",
-  "count": 14,
+  "count": 15,
   "by_status": {
-    "live": 14
+    "live": 15
   },
   "entries": [
     {
@@ -744,6 +744,57 @@
       "license": "Statistics Canada Open Licence",
       "attribution": "Source: Statistics Canada, Labour Force Survey, <reference date>",
       "notes": "Human-verified 2026-10-31: HTTP 200, the survey's record page (record number 3701), \"Detailed information for September 2026\", \"Status: Active\", \"Frequency: Monthly\", \"Data release - October 9, 2026\". It says \"The Labour Force Survey (LFS) provides estimates of employment and unemployment\" and \"LFS data are used to produce the well-known unemployment rate as well as other standard labour market indicators such as the employment rate and the participation rate.\" The data tables live on www150.statcan.gc.ca, which reset the connection for both curl and headless Chromium this session, so the tables, the formats (CSV assumed), the API and the start year weren't checked.\nLicence checked 2026-10-31: the brief's URL https://www.statcan.gc.ca/en/reference/licence redirects to https://www.statcan.gc.ca/en/terms-conditions/open-licence, titled \"Statistics Canada Open Licence\". It grants \"a worldwide, royalty-free, non-exclusive licence to: use, reproduce, publish, freely distribute, or sell the Information\", and requires the notice \"Source: Statistics Canada, name of product, reference date. Reproduced and distributed on an \"as is\" basis with the permission of Statistics Canada.\" (\"Adapted from Statistics Canada, ...\" for value-added products). The licence is confirmed.\n"
+    },
+    {
+      "id": "statssa-quarterly-labour-force-survey",
+      "type": "dataset",
+      "title": "Stats SA Quarterly Labour Force Survey (QLFS), South Africa",
+      "description": "Statistics South Africa's quarterly household survey of the labour market and the source of South Africa's official and expanded unemployment rates, with employment by industry and sector (formal and informal), labour force participation and labour underutilisation, nationally and by province.\n",
+      "publisher": "Statistics South Africa (Stats SA)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "ZA"
+      },
+      "topics": [
+        "employment",
+        "unemployment",
+        "informality",
+        "labour-force-survey",
+        "south-africa",
+        "africa"
+      ],
+      "source": {
+        "canonical_url": "https://www.statssa.gov.za/?page_id=1854&PPN=P0211"
+      },
+      "access": {
+        "method": [
+          "web"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "pdf",
+        "xlsx"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "South Africa (national and provincial)",
+        "temporal": "2008-present (per the \"QLFS Trends 2008-2026Q2\" file)",
+        "cadence": "quarterly"
+      },
+      "license": "Stats SA copyright and disclaimer (free use with acknowledgement of Stats SA as the source; not an open licence by name)",
+      "attribution": "Statistics South Africa, Quarterly Labour Force Survey (P0211)",
+      "notes": "Human-verified 2026-10-31: HTTP 200, publication page \"P0211 - Quarterly Labour Force Survey (QLFS), 2nd Quarter 2026\", \"Publication date & time: 11 August 2026 @ 11:00\". The downloads are the full publication (PDF, 4.76 MB), a media release, a presentation, \"Economically active population QLFS Q2 2026\" and \"QLFS Trends 2008-2026Q2\" (1.64 MB). The spreadsheet format of the trends file is assumed and wasn't opened. The canonical URL is a series page (PPN=P0211) whose content rolls to the latest quarter. The description's split into official and expanded unemployment and into formal and informal employment comes from Stats SA's usual QLFS content and wasn't read on this page. Microdata (through the DataFirst portal) and the SuperWEB2 tables weren't checked.\nLicence checked 2026-10-31: Stats SA's copyright and disclaimer page (https://www.statssa.gov.za/?page_id=425) says \"All Stats SA products are protected by copyright. Users may apply the information as they wish, provided that they acknowledge Stats SA as the source of the basic data wherever they process, apply, utilise, publish or distribute the data, and also that they specify that the relevant application and analysis (where applicable) result from their own processing of the data.\"\n"
     }
   ]
 }
