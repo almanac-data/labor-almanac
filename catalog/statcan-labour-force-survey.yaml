@@ -1,0 +1,44 @@
+id: statcan-labour-force-survey
+type: dataset
+title: Statistics Canada Labour Force Survey (LFS)
+description: |
+  Canada's monthly household survey of the labour market and the source of the official unemployment, employment and participation rates, with estimates by industry, occupation, hours, wages, union status and demographics for Canada, the provinces, the territories and sub-provincial regions.
+publisher: Statistics Canada
+jurisdiction:
+  scope: national
+  country: CA
+topics:
+- employment
+- unemployment
+- labour-force-survey
+- wages
+- canada
+source:
+  canonical_url: https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=3701
+access:
+  method:
+  - web
+  - api
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: Canada (national, provinces, territories, sub-provincial regions)
+  temporal: varies by table
+  cadence: monthly
+license: Statistics Canada Open Licence
+attribution: 'Source: Statistics Canada, Labour Force Survey, <reference date>'
+notes: |
+  Human-verified 2026-10-31: HTTP 200, the survey's record page (record number 3701), "Detailed information for September 2026", "Status: Active", "Frequency: Monthly", "Data release - October 9, 2026". It says "The Labour Force Survey (LFS) provides estimates of employment and unemployment" and "LFS data are used to produce the well-known unemployment rate as well as other standard labour market indicators such as the employment rate and the participation rate." The data tables live on www150.statcan.gc.ca, which reset the connection for both curl and headless Chromium this session, so the tables, the formats (CSV assumed), the API and the start year weren't checked.
+  Licence checked 2026-10-31: the brief's URL https://www.statcan.gc.ca/en/reference/licence redirects to https://www.statcan.gc.ca/en/terms-conditions/open-licence, titled "Statistics Canada Open Licence". It grants "a worldwide, royalty-free, non-exclusive licence to: use, reproduce, publish, freely distribute, or sell the Information", and requires the notice "Source: Statistics Canada, name of product, reference date. Reproduced and distributed on an "as is" basis with the permission of Statistics Canada." ("Adapted from Statistics Canada, ..." for value-added products). The licence is confirmed.
