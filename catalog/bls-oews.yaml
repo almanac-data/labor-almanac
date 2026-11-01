@@ -1,0 +1,44 @@
+id: bls-oews
+type: dataset
+title: BLS Occupational Employment and Wage Statistics (OEWS)
+description: |
+  Annual employment and wage estimates for about 830 occupations, for the nation, states, and metropolitan and nonmetropolitan areas, with national estimates by industry: the standard US source for pay by occupation.
+publisher: U.S. Bureau of Labor Statistics (BLS), Department of Labor
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- occupations
+- wages
+- employment
+- united-states
+source:
+  canonical_url: https://www.bls.gov/oes/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- xlsx
+- txt
+- html
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States (national, states, metropolitan and nonmetropolitan areas; national by industry and ownership)
+  temporal: varies (tables page lists May 2019 to May 2025; earlier years not checked)
+  cadence: annual
+license: public-domain (US Gov work)
+attribution: U.S. Bureau of Labor Statistics, Occupational Employment and Wage Statistics
+notes: |
+  Human-verified 2026-11-01 in headless Chromium: HTTP 200, page "OES Home : U.S. Bureau of Labor Statistics". curl (plain and with a browser User-Agent) got HTTP 403 from Akamai; the page answered only in Chromium's new headless mode (playwright chromium.launch with channel "chromium"), so the vertical needs reachability.headless: true. The page says the OEWS program "produces employment and wage estimates annually for approximately 830 occupations. These estimates are available for the nation as a whole, for individual states, and for metropolitan and nonmetropolitan areas; national occupational estimates for specific industries are also available." A notice reads "Notice Regarding Suspension of Publication of Colorado Occupational Employment and Wage Statistics", alongside "May 2024 OEWS data for Colorado and its areas are now available". The OEWS Tables page (https://www.bls.gov/oes/tables.htm) lists May 2025 as the latest release, with national, state, area and industry tables in HTML and XLSX and "All data (XLSX) (TXT)", and earlier years back to at least May 2019. Earlier years and API coverage were not checked.
+  Licence checked 2026-11-01: BLS Copyright Information (https://www.bls.gov/opub/copyright-information.htm, read in headless Chromium) says "The Bureau of Labor Statistics (BLS) is a Federal government agency and everything that we publish, both in hard copy and electronically, is in the public domain, except for previously copyrighted photographs and illustrations. You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source." The BLS emblem is a registered trademark.
