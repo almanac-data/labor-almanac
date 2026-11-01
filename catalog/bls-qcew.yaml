@@ -1,0 +1,43 @@
+id: bls-qcew
+type: dataset
+title: BLS Quarterly Census of Employment and Wages (QCEW)
+description: |
+  A quarterly count of employment and wages reported by employers through state unemployment-insurance programs, covering more than 95 percent of US jobs, by industry at the county, metropolitan area, state and national levels: the near-complete census of US jobs and pay.
+publisher: U.S. Bureau of Labor Statistics (BLS), Department of Labor
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- employment
+- wages
+- establishments
+- county
+- united-states
+source:
+  canonical_url: https://www.bls.gov/cew/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States (national, states, metropolitan areas, counties; by industry and ownership)
+  temporal: NAICS-based data 1990 onwards (totals by ownership from 1975); SIC-based data 1975-2000
+  cadence: quarterly
+license: public-domain (US Gov work)
+attribution: U.S. Bureau of Labor Statistics, Quarterly Census of Employment and Wages
+notes: |
+  Human-verified 2026-11-01 in headless Chromium: HTTP 200, page "Quarterly Census of Employment and Wages : U.S. Bureau of Labor Statistics". curl (plain and with a browser User-Agent) got HTTP 403 from Akamai; the page answered only in Chromium's new headless mode (playwright chromium.launch with channel "chromium"), so the vertical needs reachability.headless: true. The page says QCEW "publishes a quarterly count of employment and wages reported by employers covering more than 95 percent of U.S. jobs, available at the county, MSA, state and national levels by industry". Notices list "Employment and Wages, Annual Averages, 2025" and "QCEW Summary and Historical Reporting Rates Tables now updated with First Quarter 2026 data"; a chart compares March 2025 to March 2026. The QCEW Data Files page (https://www.bls.gov/cew/downloadable-data-files.htm) says: "Data classified using the North American Industry Classification System (NAICS) are available from 1990 forward, and on a more limited basis from 1975 to 1989", SIC data "from 1975 through 2000", and that QCEW Open Data Access offers "a collection of CSV files" covering "the most recent 5 years". The page says files come in "several different formats"; only CSV is listed here, and the other formats and the BLS Public Data API's QCEW coverage were not checked.
+  Licence checked 2026-11-01: BLS Copyright Information (https://www.bls.gov/opub/copyright-information.htm, read in headless Chromium) says "The Bureau of Labor Statistics (BLS) is a Federal government agency and everything that we publish, both in hard copy and electronically, is in the public domain, except for previously copyrighted photographs and illustrations. You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source." The BLS emblem is a registered trademark.
