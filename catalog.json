@@ -49,6 +49,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104212222/https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "Australia (national, states and territories)",
         "temporal": "varies by series (not checked)",
@@ -104,6 +114,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261102211228/https://www.bls.gov/ces/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-02",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "United States (national; states and metropolitan areas through CES State and Metro Area)",
         "temporal": "varies by series (not checked)",
@@ -159,6 +179,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104212923/https://www.bls.gov/cpi/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "United States (national, census regions, selected metropolitan areas)",
         "temporal": "varies by index (not checked)",
@@ -214,6 +244,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261102020203/https://www.bls.gov/cps/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-02",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "United States (national)",
         "temporal": "varies by series (not checked)",
@@ -269,6 +309,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104213604/https://www.bls.gov/jlt/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "United States (national, by industry and region; states)",
         "temporal": "varies by series (not checked)",
@@ -325,6 +375,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261026093909/https://www.bls.gov/lau/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-26",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "United States (regions, divisions, states, counties, metropolitan areas, many cities)",
         "temporal": "varies by geography (not checked)",
@@ -378,6 +438,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104214301/https://www.bls.gov/oes/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "United States (national, states, metropolitan and nonmetropolitan areas; national by industry and ownership)",
         "temporal": "varies (tables page lists May 2019 to May 2025; earlier years not checked)",
@@ -430,6 +500,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261024225914/https://www.bls.gov/cew/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-24",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "United States (national, states, metropolitan areas, counties; by industry and ownership)",
         "temporal": "NAICS-based data 1990 onwards (totals by ownership from 1975); SIC-based data 1975-2000",
@@ -485,6 +565,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261019064650/https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-19",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 200)."
+        }
+      ],
       "coverage": {
         "spatial": "Brazil (national, regions, states, capitals and metropolitan areas)",
         "temporal": "varies by table (not checked)",
@@ -540,6 +630,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261021000319/https://data.dol.gov/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-21",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 200)."
+        }
+      ],
       "coverage": {
         "spatial": "United States (establishment level)",
         "temporal": "varies by dataset (not checked)",

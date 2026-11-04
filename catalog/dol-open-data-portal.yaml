@@ -37,6 +37,13 @@ observed:
   final_url: https://data.dol.gov/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261021000319/https://data.dol.gov/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-21'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 200).'
 coverage:
   spatial: United States (establishment level)
   temporal: varies by dataset (not checked)
