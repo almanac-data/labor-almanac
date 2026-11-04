@@ -34,6 +34,13 @@ observed:
   final_url: https://www.bls.gov/cew/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261024225914/https://www.bls.gov/cew/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-24'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: United States (national, states, metropolitan areas, counties; by industry and ownership)
   temporal: NAICS-based data 1990 onwards (totals by ownership from 1975); SIC-based data 1975-2000
