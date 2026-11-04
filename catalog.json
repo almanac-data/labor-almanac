@@ -42,7 +42,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release",
@@ -97,7 +97,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.bls.gov/ces/",
@@ -152,7 +152,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.bls.gov/cpi/",
@@ -207,7 +207,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.bls.gov/cps/",
@@ -262,7 +262,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.bls.gov/jlt/",
@@ -318,7 +318,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.bls.gov/lau/",
@@ -371,7 +371,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.bls.gov/oes/",
@@ -423,7 +423,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.bls.gov/cew/",
@@ -478,7 +478,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/",
@@ -533,7 +533,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://data.dol.gov/",
@@ -591,7 +591,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://ec.europa.eu/eurostat/web/labour-market/database",
@@ -650,7 +650,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://rplumber.ilo.org/__docs__/",
@@ -703,7 +703,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.inegi.org.mx/programas/enoe/15ymas/",
@@ -757,7 +757,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://data-explorer.oecd.org/?fs%5B0%5D=Topic%2C0%7CEmployment%23JOB%23&pg=0&fc=Topic",
@@ -809,7 +809,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.osha.gov/itadata",
@@ -862,7 +862,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=3701",
@@ -915,7 +915,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.statssa.gov.za/?page_id=1854&PPN=P0211",
@@ -970,7 +970,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-03",
+        "checked": "2026-11-04",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.ons.gov.uk/employmentandlabourmarket",
