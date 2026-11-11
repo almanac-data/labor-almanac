@@ -35,6 +35,13 @@ observed:
   final_url: https://www.statssa.gov.za/?page_id=1854&PPN=P0211
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261111222010/https://www.statssa.gov.za/?page_id=1854&PPN=P0211
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-11'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now.'
 coverage:
   spatial: South Africa (national and provincial)
   temporal: 2008-present (per the "QLFS Trends 2008-2026Q2" file)
