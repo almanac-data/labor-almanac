@@ -698,6 +698,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261111215918/https://ec.europa.eu/eurostat/web/labour-market/database",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "EU member states (plus some EFTA and candidate countries); NUTS regions for some series",
         "temporal": "varies by dataset",
@@ -757,6 +767,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261008110157/https://rplumber.ilo.org/__docs__/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-08",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "global (200+ countries and territories, plus regional and income-group aggregates)",
         "temporal": "varies by indicator",
@@ -810,6 +830,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261111220614/https://www.inegi.org.mx/programas/enoe/15ymas/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "Mexico (national, state and city level)",
         "temporal": "2005-present (with the 2020 ETOE and 2020-2022 ENOEN editions in between)",
@@ -916,6 +946,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261007004121/https://www.osha.gov/itadata",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-07",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 520)."
+        }
+      ],
       "coverage": {
         "spatial": "United States (establishment level; covered establishments only)",
         "temporal": "2016-present (summary data); 2023-present (case detail)",
@@ -969,6 +1009,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261028185201/https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=3701",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-28",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "Canada (national, provinces, territories, sub-provincial regions)",
         "temporal": "varies by table",
@@ -1022,6 +1072,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261111222010/https://www.statssa.gov.za/?page_id=1854&PPN=P0211",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "South Africa (national and provincial)",
         "temporal": "2008-present (per the \"QLFS Trends 2008-2026Q2\" file)",
@@ -1077,6 +1137,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261107101441/https://www.ons.gov.uk/employmentandlabourmarket",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-07",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "United Kingdom (national, regions and local areas for some series)",
         "temporal": "varies by series",

@@ -41,6 +41,13 @@ observed:
   final_url: https://rplumber.ilo.org/__docs__/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261008110157/https://rplumber.ilo.org/__docs__/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-08'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: global (200+ countries and territories, plus regional and income-group aggregates)
   temporal: varies by indicator
